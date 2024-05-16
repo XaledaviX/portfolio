@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --dark: #222831;
+    --dark-light: #31363F;
+    --aqua-gray: #76ABAE;
+    --pastel: #EEEEEE;
+  
+    --yellow: #FCDB00;
+    --green: #CCEC41;
+    --aqua: #028ECB;
+    --red: #F2080B;
+
+    --blanco: #ffffff;
+    --gris-1: #D9D9D9;
+    --gris-2: #878682;
+    --gris-3: #222222;
+  
+    --font-weight-title1: 800;
+    --font-weight-title2: 600;
+    --font-weight-title3: 500;
+    --font-weight-text1: 400;
+    --font-weight-text2: 500;
+  }
+
+*{
+    font-family:"IBM Plex Mono", "Roboto Mono", monospace ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-weight: var(--font-weight-title1);
+    color: var(--pastel);
+}
+
+h2{
+    font-weight: var(--font-weight-title2);
+    color: var(--pastel);
+}
+
+h3{
+    font-weight: var(--font-weight-title3);
+    color: var(--pastel);
+}
+
+p{
+    font-weight: var(--font-weight-text1);
+    color: var(--pastel);
+}
+
+b{
+    font-weight: var(--font-weight-text2);
+    color: var(--aqua-gray);
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    
+}
+
+/*//////////// first page //////////////*/
+
+.one, .two, .three, .four{
+background-color: var(--dark-light);
+}
+
+.main, .main-two, .main-message{
+    padding: 0.8em;
+    box-shadow: 0px -2px 13px 3px var(--aqua-gray);
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 0%;
+    width: 100%;
+    height: 80%;
+    background-color: var(--dark);
+}
+
+.main header{
+    padding: 0.5em;
+    display: flex;
+    height: 15%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main header h1{
+    border-bottom: solid var(--aqua-gray);
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.icons a{
+    margin: 0.5em;
+    width: 2em;
+    height: 2em;
+}
+
+.icons a svg{
+    width: 100%;
+    height: 100%;
+}
+
+.icon{
+    transition: filter 0.3s ease;
+}
+
+.icon:hover{
+    filter: brightness(30%);
+}
+
+.content{
+    margin: 0.5em;
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h3{
+    margin-bottom: 1em;
+}
+
+.find{
+    margin: 0.5em;
+    display: flex;
+    align-items: center;
+}
+.redes{
+    margin-left: 0.8em;
+}
+
+.redes-icon{
+    transition: filter 0.3s ease;
+}
+
+.redes-icon:hover{
+    filter:drop-shadow(16px 16px 20px red) invert(75%);
+}
+
+/*///////// second page /////////////*/
+
+.main-two{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-two div{
+    display: flex;
+    flex-direction: row;
+}
+
+.knowledge-container div{
+    display: flex;
+    flex-direction: column;
+}
+
+.knowledge-container div h2{
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+}
+
+.main-two h1{
+    margin: 0.5em auto 0.5em 0.5em;
+}
+
+.bar-container{
+    display: flex;
+    height: 2.7em;
+    align-items: center;
+    margin-bottom: 0.8em;
+}
+
+.bar-container svg{
+    width: 80%
+}
+
+.rect-1 {
+    rx: 10;
+    stroke: #EEEEEE;
+    stroke-width: 6;
+    shape-rendering: crispEdges;
+}
+
+.rect-2 {
+    rx: 10;
+
+    fill: #76ABAE;
+}
+
+
+/*////////// third ////////////////*/
+.three{
+    background-color: rgb(183, 226, 43);
+}
+
+/*/////////// four ////////////////*/
+
+.message-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5em;
+}
+
+.message-title h1{
+    color: var(--aqua-gray);
+}
+
+.message-title p{
+    text-align: center;
+}
+
+.email, .name, .message-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-message input{
+    color: var(--aqua-gray);
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--pastel);
+    transition: border-color 0.8s;
+    outline: none; 
+    width: 60%;
+}
+
+.main-message input::placeholder{
+    color: var(--aqua-gray);
+}
+
+.main-message input:focus, .message-text textarea:focus{
+    border-color: var(--aqua-gray);
+
+}
+
+.message-inputs h3{
+margin: 0.5em;
+}
+
+.message-text textarea{
+    color: var(--aqua-gray);
+    resize: none;
+    border: none;
+    outline: none;
+    overflow-y: auto;
+    height: 3em;
+    width: 70%;
+    background-color: transparent;
+    border-bottom: solid 2px var(--pastel);
+}
