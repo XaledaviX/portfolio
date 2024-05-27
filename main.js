@@ -54,6 +54,6 @@ function animateBars(){
 
       setTimeout(() => {
         m.classList.toggle('animate');
-    }, 800);
+    }, 500);
   });
 }
