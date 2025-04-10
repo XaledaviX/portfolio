@@ -5,6 +5,9 @@ btnSectionWork[0].addEventListener("click", () => targetSection[1].scrollIntoVie
 btnSectionMessage[0].addEventListener("click", () => targetSection[2].scrollIntoView({ behavior: 'smooth' }));
 
 function getWhiteMode(){
+    btnSun.classList.toggle('inactive')
+    btnMoon.classList.toggle('inactive')
+
     pageOne.classList.toggle('-whiteMode');
     pageTwo.classList.toggle('-whiteMode');
     pageThree.classList.toggle('-whiteMode');

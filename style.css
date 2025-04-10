@@ -109,11 +109,13 @@ section{
     
 }
 
+.firstPage, .secondPage, .thirdyPage, .fourthPage, .five{
+    background-color: var(--dark-light);
+    }
+
 /*//////////// first page //////////////*/
 
-.one, .two, .three, .four{
-background-color: var(--dark-light);
-}
+/*/////////// header ////////////////*/
 
 .-whiteMode{
     background-color: var(--white-gray);
@@ -149,29 +151,32 @@ background-color: var(--dark-light);
     .8s ease;
 }
 
-.icons{
+.firstPage__icons{
     display: flex;
     justify-content: flex-end;
     width: 30%;
 }
 
-.icons div{
+.firstPage__icons div{
     margin: 0.5em;
     width: 2em;
     height: 2em;
 }
 
-.icons svg{
+.firstPage__icons svg{
     width: 100%;
     height: 100%;
 }
 
-.icon{
+.iconMoon, .iconSun{
     cursor: pointer;
-    transition: filter 0.3s ease;
 }
 
-.icon:hover{
+.iconSun path{
+    stroke: var(--pastel)
+}
+
+.iconMoon:hover, .iconSun:hover, .bars__menu:hover{
     filter: brightness(30%);
 }
 
@@ -251,6 +256,8 @@ background-color: var(--dark-light);
     filter:drop-shadow(16px 16px 20px red) invert(75%);
 }
 
+/*///////// content ///////////*/
+
 .content{
     justify-content: center;
     margin: 0.5em;
@@ -274,6 +281,8 @@ background-color: var(--dark-light);
     opacity: 0;
     pointer-events: none;
 }
+
+/*//////// find /////////////*/
 
 .find{
     border-bottom: solid 2px var(--aqua-gray);

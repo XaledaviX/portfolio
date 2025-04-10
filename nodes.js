@@ -1,10 +1,12 @@
 //darMode///////
-const btnWhiteMode = document.querySelector('.whiteMode');
+const btnSun = document.querySelector('.iconSun')
+const btnMoon = document.querySelector('.iconMoon')
+const btnWhiteMode = document.querySelector('.firstPage__btnWhiteMode');
 
-const pageOne = document.querySelector('.one');
-const pageTwo = document.querySelector('.two');
-const pageThree = document.querySelector('.three');
-const pageFour = document.querySelector('.four');
+const pageOne = document.querySelector('.firstPage');
+const pageTwo = document.querySelector('.secondPage');
+const pageThree = document.querySelector('.thirdyPage');
+const pageFour = document.querySelector('.fourthPage');
 
 const pageOneMain = document.querySelector('.main');
 const pageTwoMain = document.querySelector('.main-two');
